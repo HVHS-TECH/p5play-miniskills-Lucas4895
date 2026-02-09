@@ -9,14 +9,20 @@
 /*******************************************************/
 function setup() {
 	console.log("setup: ");
-
+    cnv = new Canvas(0, 0);
+	rectangle = new Sprite(500, 200, 100, 150);
+    rectangle.color = '#222';
+	circle = new Sprite(700, 200, 150);
+	circle.color = '#123';
+	rectangle.rotationSpeed = -20;
+	circle.vel.x = 1;
 }
 	
 /*******************************************************/
 // draw()
 /*******************************************************/
 function draw() {
-	
+	background("#ffffff");
 }
 
 /*******************************************************/
