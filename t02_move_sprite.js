@@ -14,8 +14,8 @@ function setup() {
     rectangle.color = '#222';
 	circle = new Sprite(700, 200, 150);
 	circle.color = '#123';
-	rectangle.rotationSpeed = -20;
-	circle.vel.x = 1;
+	rectangle.rotationSpeed = -2;
+	circle.vel.x = 2;
 }
 	
 /*******************************************************/
