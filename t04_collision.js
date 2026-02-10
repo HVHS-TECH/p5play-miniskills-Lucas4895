@@ -9,7 +9,6 @@
 /*******************************************************/
 function setup() {
 	console.log("setup: ");
-	console.log("setup: ");
     cnv = new Canvas(0, 0);
 	world.gravity.y = 10;
 	rectangle = new Sprite(500, 200, 100, 150, 10);
