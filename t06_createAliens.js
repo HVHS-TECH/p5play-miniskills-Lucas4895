@@ -9,7 +9,6 @@
 /*******************************************************/
 function setup() {
 	console.log("setup: ");
-	randNum = random(100, 800);
     cnv = new Canvas(900, 900);
 	world.gravity.y = 10;
 
@@ -32,10 +31,12 @@ function setup() {
 /*******************************************************/
 
     for (i = 0; i < 10; i++) {
+     randNum = random(100, 800);
+     randVel = random(1, 10);
      alien = new Sprite(randNum, randNum, 20, 20);
 	 alien.color = '#999'
-     alien.vel.x = randNum;
-     alien.vel.y = randNum;
+     alien.vel.x = randVel;
+     alien.vel.y = randVel;
      alien.bounciness = 1;
      alien.friction = 0;
     };
