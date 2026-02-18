@@ -71,11 +71,11 @@ imgFace.resize(50, 50);
 /*******************************************************/
 function draw() {
 	background(imgBG);
-ball_1.moveTowards(mouseX, mouseY, 1);
+ball_1.moveTowards(mouseX, mouseY, 0.1);
 
 if (mouse.presses()) {
 
-ball_1.moveTo(xPos, yPos, 30);
+ball_1.moveTo(xPos, yPos, 0);
 
 };
 };

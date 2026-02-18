@@ -59,18 +59,23 @@ imgFace.resize(50, 50);
     };
 };
 
-
-
 /*******************************************************/
 // draw()
 /*******************************************************/
 function draw() {
+
+
 	background(imgBG);
     ball_1.moveTowards(mouseX, mouseY, 0.1);
+text("Hello World", width/2, height/2);
+fill(' white');
+textSize(32);
+var name = "Mr Bob";
 
-    if (mouse.presses()) {
-		ball_1.moveTo(xPos, yPos, 10);
-    };
+text("Hello "+name, 50, 100);
+
+
+
 
 	if (kb.pressing('left')) {
 		alienGroup.vel.x = -10;
