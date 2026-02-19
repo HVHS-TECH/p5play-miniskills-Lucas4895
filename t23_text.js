@@ -76,10 +76,9 @@ function draw() {
 
 
 /*******************************************************/
-//Get time, seconds and milliseconds
+// milliseconds
 
 	let ms = millis();
-    const d = new Date();
 /*******************************************************/
 
 
