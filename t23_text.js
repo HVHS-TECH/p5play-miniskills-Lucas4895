@@ -30,9 +30,11 @@ ball_1.friction   = 0;
 ball_1.image = (imgFace);
 
 imgFace.resize(50, 50);
+
+
 	  
 /*******************************************************/
-//wall
+//walls
     wallLH  = new Sprite(0, height/2, 15, height, 'k');
     wallLH.color = "#000"
 	wallRH  = new Sprite(900, height/2, 15, height, 'k');
@@ -43,6 +45,10 @@ imgFace.resize(50, 50);
     wallBot.color = "#981"
 /*******************************************************/
 
+
+
+/*******************************************************/
+//alienGroup
     alienGroup = new Group();
     for (i = 0; i < 50; i++) {
     randNum = random(100, 800);
@@ -58,6 +64,9 @@ imgFace.resize(50, 50);
      };
     };
 };
+/*******************************************************/
+
+
 
 /*******************************************************/
 // draw()
@@ -65,18 +74,33 @@ imgFace.resize(50, 50);
 function draw() {
 
 
+
+/*******************************************************/
+//Get time, seconds and milliseconds
+
+	let ms = millis();
+    const d = new Date();
+    let seconds = d.getSeconds();
+/*******************************************************/
+
+
+
 	background(imgBG);
     ball_1.moveTowards(mouseX, mouseY, 0.1);
-text("Hello World", width/2, height/2);
-fill(' white');
-textSize(32);
-var name = "Mr Bob";
-
-text("Hello "+name, 50, 100);
 
 
 
+/*******************************************************/
+//Texts
+    fill(' white');
+    textSize(32);
+    text(`Startup time: ${round(seconds, 2)} ${round(ms, 2)}s`, 5, width/2, height/2);
+/*******************************************************/
 
+
+
+/*******************************************************/
+//Keyboard inputs
 	if (kb.pressing('left')) {
 		alienGroup.vel.x = -10;
 
