@@ -80,7 +80,6 @@ function draw() {
 
 	let ms = millis();
     const d = new Date();
-    let seconds = d.getSeconds();
 /*******************************************************/
 
 
@@ -94,7 +93,7 @@ function draw() {
 //Texts
     fill(' white');
     textSize(32);
-    text(`Startup time: ${round(seconds, 2)} ${round(ms, 2)}s`, 5, width/2, height/2);
+    text(`Startup time: ${round(ms,2)}ms`, 5, width/2, height/2);
 /*******************************************************/
 
 
